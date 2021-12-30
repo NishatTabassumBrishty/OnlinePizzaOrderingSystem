@@ -23,7 +23,7 @@
 
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">Pizza</div>
+                <div class="card-header">Menu</div>
  
                 <div class="card-body">
                     <div class="row">
@@ -34,7 +34,7 @@
                                     <p>{{ $pizza->description }}</p>
                                     <a href="{{route('pizza.show',$pizza->id)}}">
                                 
-                                        <button class="btn btn-outline-warning mb-1">Order Now</button>
+                                        <button class="btn btn-outline-warning mb-1">Add to cart</button>
                                     </a>
                                 </div>
                             @empty
