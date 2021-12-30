@@ -32,8 +32,9 @@ class FrontendController extends Controller
             'small_pizza' => $request->small_pizza,
             'medium_pizza' => $request->medium_pizza,
             'large_pizza' => $request->large_pizza,
-            
-            'phone' => $request->phone
+            'phone' => $request->phone,
+            'payment_method' => $request->payment_method,
+            'address' => $request->address
         ]);
         return back()->with('message', 'Your order is on your way!!');
 

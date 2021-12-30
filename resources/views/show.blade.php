@@ -21,11 +21,11 @@
                                     <p>Large pizza  <input type="number" class="form-control" name="large_pizza"
                                             value="0"></p>
                                     
-                                    <p>Address  <textarea rows = "3" cols = "45" name = "address" required></textarea></p>
+                                            <p>Address:<textarea class="form-control" name="address" required></textarea></p>
 
-                                    <label name="payment_method" >Choose the payment method:</label>
+                                    <label  >Choose the payment method:</label>
 
-<select required>
+<select name="payment_method" required>
 <option value=""></option>
   <option value="Cash on delivery">Cash on delivery</option>
   <option value="bkash">Bkash</option>
