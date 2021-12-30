@@ -29,15 +29,17 @@
                                     </p>
 
                                     @if (session('message'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('message') }}
-                        </div>
-                    @endif
-                    @if (session('errmessage'))
-                        <div class="alert alert-danger" role="alert">
-                            {{ session('errmessage') }}
-                        </div>
-                    @endif
+                                       <div class="alert alert-success" role="alert">
+                                        {{ session('message') }}
+                                         </div>
+                                    @endif
+                                    @if (session('errmessage'))
+                                    <div class="alert alert-danger" role="alert">
+                                    {{ session('errmessage') }}
+                                    </div>
+                                    @endif
+                    @else
+                    <p><a href="/login">Please Login to place order</a></p>
                 @endif                    
                     
                 </div>
