@@ -72,6 +72,7 @@
                                     <p class="lead">Medium pizza price:{{ $pizza->medium_pizza_price }}Tk</p>
                                     <p class="lead">Large pizza price:{{ $pizza->large_pizza_price }}Tk</p>
                                     
+                                    
                                     </a>
                                 </div>
                             

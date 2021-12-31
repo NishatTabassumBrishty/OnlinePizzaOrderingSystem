@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -64,10 +65,13 @@
 <a class="dropdown-item" href="{{ route('home') }}">
     {{ __('Your Order History') }}
 </a>
+<a class="dropdown-item" href="{{ route('frontpage') }}">
+    {{ __('Menu') }}
+</a>
 @endif    
 @if (auth()->user()->is_admin == 1)
     <a class="dropdown-item" href="{{ route('user.order') }}">
-        {{ __('User order') }}
+        {{ __('User orders') }}
     </a>
 @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
