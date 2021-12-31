@@ -29,7 +29,7 @@
                     <div class="row">
                     @forelse ($pizzas as $pizza )
                                 <div class="col-md-4 mt-2 text-center" style="border: 1px solid #ccc;">
-                                    <img src="{{ Storage::url($pizza->image) }}"  style="width: 100%;">
+                                    <img src="{{ Storage::url($pizza->image) }}" class="img-thumbnail" style="width: 100%;">
                                     <p>{{ $pizza->name }}</p>
                                     <p>{{ $pizza->description }}</p>
                                     <a href="{{route('pizza.show',$pizza->id)}}">
