@@ -7,6 +7,7 @@ use App\Models\Order;
 
 class FrontendController extends Controller
 {
+    
     public function index()
     {
         $pizzas = Pizza::latest()->get();

@@ -17,12 +17,13 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->integer('user_id');
             //$table->string('date');
-            //$table->string('time');
+            $table->string('payment_method');
             $table->integer('pizza_id');
             $table->string('small_pizza')->defualt(0);
             $table->string('medium_pizza')->defualt(0);
             $table->string('large_pizza')->defualt(0);
-            //$table->text('body');
+            $table->text('address');
+
             $table->string('status')->default('pending');
             $table->timestamps();
         });

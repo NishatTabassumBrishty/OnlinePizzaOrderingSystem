@@ -45,9 +45,9 @@
                     </div>
                     <div class="form-inline">
                         <label>Pizza Price(Tk)</label>
-                        <input type="number" name="small_pizza_price" class="form-control" placeholder="small_pizza_price">
-                        <input type="number" name="medium_pizza_price" class="form-control" placeholder="medium_pizza_price">
-                        <input type="number" name="large_pizza_price" class="form-control" placeholder="large_pizza_price">
+                        <input type="number" name="small_pizza_price" class="form-control" placeholder="price of small pizza">
+                        <input type="number" name="medium_pizza_price" class="form-control" placeholder="price of medium pizza">
+                        <input type="number" name="large_pizza_price" class="form-control" placeholder="price of large pizza">
                     </div>
                            <!-- <div class="form-group">
                                 <label for="description">Category</label>
@@ -63,15 +63,29 @@
                         <label>Image</label>
                         <input type="file" class="form-control" name="image">
                     </div>
-                    <div class="form-group text-center">
-                        <button class="btn btn-primary" type="submit">Save</button>
+                    <br><div class="form-group text-center">
+                        <button class="btn btn-outline-warning btn-lg" type="submit"> Save </button>
 
                     </div>
-
+</br>
                     
                 </div>
             </div>
         </div>
     </div>
 </div>
+<style>
+    a.list-group-item{
+        front-size:18px;
+    }
+    a.list-group-item:hover {
+        background-color: #ECDF7F;
+        color: #fff;
+        }
+        .card-header {
+            background-color: #ECDF7F;
+            color: #fff;
+            font-size: 20px;
+        }
+</style>
 @endsection

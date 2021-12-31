@@ -46,7 +46,7 @@ class PizzaController extends Controller
             'small_pizza_price'=>$request->small_pizza_price,
             'medium_pizza_price'=>$request->medium_pizza_price,
             'large_pizza_price'=>$request->large_pizza_price,
-            'category'=>$request->category,
+            //'category'=>$request->category,
             'image'=>$path,
         ]);
         return redirect()->route('pizza.index')->with('message','Pizza added successfully!');
@@ -96,7 +96,7 @@ class PizzaController extends Controller
         $pizza->small_pizza_price = $request->small_pizza_price;
         $pizza->medium_pizza_price = $request->medium_pizza_price;
         $pizza->large_pizza_price = $request->large_pizza_price;
-        $pizza->category = $request->category;
+        //$pizza->category = $request->category;
         $pizza->image = $path;
         $pizza->save();
         return redirect()->route('pizza.index')->with('message','Pizza update successfully!');

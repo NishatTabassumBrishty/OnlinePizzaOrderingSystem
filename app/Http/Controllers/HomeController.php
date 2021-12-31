@@ -26,12 +26,12 @@ class HomeController extends Controller
     {
         {
             if(auth()->user()->is_admin == 1){
-                return redirect()->route('user.order');
+                return redirect()->route('pizza.create');
             }
             $orders = Order::latest()->where('user_id',auth()->user()->id)->get();
+            return redirect()->route('frontpage');
             
-            //return redirect()->route('frontpage');
-            return view('home',compact('orders'));
+            //return view('home',compact('orders'));
         }
         
     }

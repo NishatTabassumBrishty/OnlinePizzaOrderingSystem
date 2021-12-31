@@ -39,7 +39,7 @@
                         <input type="text" name="medium_pizza_price" class="form-control" placeholder="medium_pizza_price" value="{{$pizza->medium_pizza_price}}">
                         <input type="text" name="large_pizza_price" class="form-control" placeholder="large_pizza_price" value="{{$pizza->large_pizza_price}}">
                     </div>
-                            <div class="form-group">
+                            <!--<div class="form-group">
                                 <label for="description">Category</label>
                                 <select class="form-control" name="category">
                                     <option value=""></option>
@@ -48,14 +48,14 @@
                                     <option value="traditional">Traditional Pizza</option>
 
                                 </select>
-                            </div>
+                            </div>-->
                     <div class="form-group">
                         <label>Image</label>
                         <input type="file" class="form-control" name="image">
                         <img src="{{ Storage::url($pizza->image) }}" width="80">
                     </div>
                     <div class="form-group text-center">
-                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-outline-warning" type="submit">Save</button>
 
                     </div>
 
@@ -65,4 +65,18 @@
         </div>
     </div>
 </div>
+<style>
+    a.list-group-item{
+        front-size:18px;
+    }
+    a.list-group-item:hover {
+        background-color: #ECDF7F;
+        color: #fff;
+        }
+        .card-header {
+            background-color: #ECDF7F;
+            color: #fff;
+            font-size: 20px;
+        }
+</style>
 @endsection
