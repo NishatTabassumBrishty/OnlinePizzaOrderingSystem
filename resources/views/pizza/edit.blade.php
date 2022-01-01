@@ -54,11 +54,12 @@
                         <input type="file" class="form-control" name="image">
                         <img src="{{ Storage::url($pizza->image) }}" width="80">
                     </div>-->
+                    <br>
                     <div class="form-group text-center">
                         <button class="btn btn-outline-warning" type="submit">Save</button>
 
                     </div>
-
+</br>
                     
                 </div>
             </div>

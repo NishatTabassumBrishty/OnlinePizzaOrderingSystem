@@ -35,7 +35,7 @@
 
                                     <p class="text-center">
 
-                                      <button class="btn btn-danger" type="submit">Confirm order</button>
+                                      <button class="btn btn-warning" type="submit">Confirm order</button>
                                     </p>
 
                                     @if (session('message'))
@@ -72,7 +72,7 @@ p.ex1 {
   
 }
 p.ex2 {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 </style>

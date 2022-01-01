@@ -46,10 +46,10 @@ p.ex2 {
                                     <!--<img src="{{ Storage::url($pizza->image) }}" class="img-thumbnail" style="width: 100%;">-->
                                     <p class="ex1">{{ $pizza->name}} </p>
                                     <p>{{ $pizza->description }}</p>
-                                    <a href="{{route('pizza.show',$pizza->id)}}">
+                                   <br> <a href="{{route('pizza.show',$pizza->id)}}">
                                 
                                         <button class="btn btn-warning mb-1">Order now</button>
-                                    </a>
+                                    </a></br>
                                 </div>
 </body>
 </html>
