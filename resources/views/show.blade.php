@@ -64,15 +64,30 @@
                         <div class="card-header">Pizza</div>
 
                                 <div class="card-body">
+<html>
+ <head>
+<style>
+p.ex1 {
+  font-size: 50px;
+  
+}
+p.ex2 {
+  font-size: 35px;
+}
+
+</style>
+</head>       
+<body >  
                     
                                    <!-- <img src="{{ Storage::url($pizza->image) }}" class="img-thumbnail" style="width: 100%;">-->
-                                    <p><h3>{{$pizza->name}}</h3></p>
-                                    <p><h3>{{$pizza->description}}</h3></p>
-                                    <p class="lead">Small pizza price:{{ $pizza->small_pizza_price }}Tk</p>
-                                    <p class="lead">Medium pizza price:{{ $pizza->medium_pizza_price }}Tk</p>
-                                    <p class="lead">Large pizza price:{{ $pizza->large_pizza_price }}Tk</p>
-                                    
-                                    
+                                    <p class="ex1">{{$pizza->name}}</p>
+                                    <p class="ex2">{{$pizza->description}}</h3>
+                                    <br>
+                                    <p class="lead">Small pizza price: {{ $pizza->small_pizza_price }}Tk</p>
+                                    <p class="lead">Medium pizza price: {{ $pizza->medium_pizza_price }}Tk</p>
+                                    <p class="lead">Large pizza price: {{ $pizza->large_pizza_price }}Tk</p>
+</br>
+
                                     </a>
                                 </div>
                             
@@ -81,7 +96,8 @@
                 </div>
 
 
-                
+                </body>
+</html>               
                 
            
 

@@ -21,22 +21,38 @@
             
         
 
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Menu ({{count($pizzas)}} pizza)</div>
  
                 <div class="card-body">
                     <div class="row">
+                    <html>
+<head>
+<style>
+p.ex1 {
+  font-size: 35px;
+  style="color:yellow;"
+}
+p.ex2 {
+  font-size: 50px;
+}
+</style>
+</head>       
+<body >             
                     @forelse ($pizzas as $pizza )
                                 <div class="col-md-4 mt-2 text-center" style="border: 1px solid #ccc;">
+                                
                                     <!--<img src="{{ Storage::url($pizza->image) }}" class="img-thumbnail" style="width: 100%;">-->
-                                    <p>{{ $pizza->name }}</p>
+                                    <p class="ex1">{{ $pizza->name}} </p>
                                     <p>{{ $pizza->description }}</p>
                                     <a href="{{route('pizza.show',$pizza->id)}}">
                                 
-                                        <button class="btn btn-outline-warning mb-1">Order now</button>
+                                        <button class="btn btn-warning mb-1">Order now</button>
                                     </a>
                                 </div>
+</body>
+</html>
                             @empty
                                 <p>no pizzas to show</p>
 
@@ -50,6 +66,7 @@
         </div>
     </div>
 </div>
+
 
 <style>
     a.list-group-item{
