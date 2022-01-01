@@ -31,7 +31,7 @@ class HomeController extends Controller
             $orders = Order::latest()->where('user_id',auth()->user()->id)->get();
             return redirect()->route('frontpage');
             
-            //return view('home',compact('orders'));
+           // return view('home',compact('orders'));
         }
         
     }

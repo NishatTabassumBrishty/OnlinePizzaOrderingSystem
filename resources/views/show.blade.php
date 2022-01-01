@@ -35,7 +35,7 @@
 
                                     <p class="text-center">
 
-                                        <button class="btn btn-danger" type="submit">Confirm order</button>
+                                      <button class="btn btn-danger" type="submit">Confirm order</button>
                                     </p>
 
                                     @if (session('message'))
@@ -52,7 +52,7 @@
 </form>
                     @else
                     <p><a href="/login">Please Login to place order</a></p>
-                @endif                    
+                @endif                  
                     
                 </div>
             </div>
@@ -65,7 +65,7 @@
 
                                 <div class="card-body">
                     
-                                    <img src="{{ Storage::url($pizza->image) }}" class="img-thumbnail" style="width: 100%;">
+                                   <!-- <img src="{{ Storage::url($pizza->image) }}" class="img-thumbnail" style="width: 100%;">-->
                                     <p><h3>{{$pizza->name}}</h3></p>
                                     <p><h3>{{$pizza->description}}</h3></p>
                                     <p class="lead">Small pizza price:{{ $pizza->small_pizza_price }}Tk</p>
@@ -79,6 +79,10 @@
                         
                     </div>
                 </div>
+
+
+                
+                
            
 
 <style>

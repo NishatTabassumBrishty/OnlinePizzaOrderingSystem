@@ -40,4 +40,10 @@ class FrontendController extends Controller
         return back()->with('message', 'Your order is on your way!!');
 
     }
+
+
+    public function confirmorder($id){
+        $pizza = Pizza::find($id);
+        return view ('confirmorder', compact('pizza'));
+    }
 }

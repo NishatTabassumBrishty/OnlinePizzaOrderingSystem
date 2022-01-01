@@ -49,11 +49,11 @@
 
                                 </select>
                             </div>-->
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label>Image</label>
                         <input type="file" class="form-control" name="image">
                         <img src="{{ Storage::url($pizza->image) }}" width="80">
-                    </div>
+                    </div>-->
                     <div class="form-group text-center">
                         <button class="btn btn-outline-warning" type="submit">Save</button>
 

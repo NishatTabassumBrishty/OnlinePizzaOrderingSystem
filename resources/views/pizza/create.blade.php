@@ -59,10 +59,10 @@
 
                                 </select>
                             </div>-->
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label>Image</label>
                         <input type="file" class="form-control" name="image">
-                    </div>
+                    </div>-->
                     <br><div class="form-group text-center">
                         <button class="btn btn-outline-warning btn-lg" type="submit"> Save </button>
 

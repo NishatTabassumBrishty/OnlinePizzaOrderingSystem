@@ -35,7 +35,7 @@
   <thead>
   <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Image</th>
+                                    <!--<th scope="col">Image</th>-->
                                     <th scope="col">Name</th>
                                     <th scope="col">Description</th>
                                     
@@ -51,7 +51,7 @@
                                     @foreach ($pizzas as $key => $pizza)
                                         <tr>
                                             <th scope="row">{{ $key + 1 }}</th>
-                                            <td><img src="{{ Storage::url($pizza->image) }}" width="80"></td>
+                                            <!--<td><img src="{{ Storage::url($pizza->image) }}" width="80"></td>-->
                                             <td>{{ $pizza->name }}</td>
                                             <td>{{ $pizza->description }}</td>
                                            
